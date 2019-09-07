@@ -26,8 +26,9 @@ Change <tag>x.0</tag> in line number 36 to 39 in pom.xml of the project.
 `docker run -d --name $container_name -p 8080:8080 $user_name/$image_name:$image_tag`
 
 or if you want to mount the volume for accessing log files on the host
-
-`docker run -d --name $container_name -p 8080:8080 -v /Users/name/Documents/dockerdata/demoapp2logs:/var/applogs $user_name/$image_name:$image_tag`
+```
+docker run -d --name $container_name -p 8080:8080 -v /Users/name/Documents/dockerdata/demoapp2logs:/var/applogs $user_name/$image_name:$image_tag
+```
 
 <b> Connecting to shell of the running docker container (it has a ash shell as the base OS is alpine): </b>
 
