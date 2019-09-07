@@ -50,7 +50,7 @@ public class DemoApp implements AsyncConfigurer{
     public void genlogsfor10minutes(){
 		int i = 1;
 		while(i<=600) {
-			if (i%5 == 0)
+			if (i%3 == 0)
 				LOGGER.info("SUCCESS_MARKER demoapp2 log statement number " + i );
 			else if(i%10 == 0)
 				LOGGER.error("ERROR_MARKER demoapp2 log statement number " + i );
